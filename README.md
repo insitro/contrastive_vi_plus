@@ -2,7 +2,7 @@
 <h1>Contrastive Variational Inference+</h1>
 </div>
 
-Code accompanying ["Modeling variable guide efficiency in pooled CRISPR screens with ContrastiveVI+"](https://doi.org/10.48550/arXiv.2411.08072)
+Code accompanying ["Modeling variable guide efficiency in pooled CRISPR screens with ContrastiveVI+"](https://arxiv.org/abs/2411.08072)
 
 ConstrastiveVI+ is a generative modeling framework for analyzing genetic screen data with single cell readout (e.g PerturbSeq). ContrastiveVI+ disentangles perturbation-induced from non-perturbation-related variations, while also accounting for varying perturbation efficiency rates and estimating the probability each cell was perturbed.
 
