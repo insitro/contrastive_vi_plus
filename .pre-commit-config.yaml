@@ -1,0 +1,24 @@
+repos:
+  # YAML linting and general cleanups
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+  # ruff: Python formatter & linter
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.7.1
+    hooks:
+      - id: ruff
+        args: [ --fix ]
+      - id: ruff-format
+  # Mypy: Python type-checking
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.13.0
+    hooks:
+      - id: mypy
+        # If needed, add other stub packages corresponding to libraries that don't use inline types.
+        # See http://mypy-lang.blogspot.com/2021/06/mypy-0900-released.html for more details.
+        additional_dependencies:
+          - types-requests==2.28.11.8
