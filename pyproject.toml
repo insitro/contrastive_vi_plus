@@ -1,0 +1,18 @@
+[build-system]
+build-backend = 'setuptools.build_meta'
+requires = [
+    'setuptools',
+]
+
+[project]
+description = "Contrastive Variational Inference+"
+name = "contrastive_vi_plus"
+version = "0.1.0"
+requires-python = ">=3.10"
+
+dependencies = [
+    "scvi-tools==1.2.0",
+    "muon",
+    "boto3",
+    "scikit-misc"
+]
