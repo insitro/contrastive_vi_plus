@@ -12,7 +12,7 @@ import pandas as pd
 import torch
 import torch.nn.functional as F
 from anndata import AnnData
-from loss_recorder import LossOutput
+from .loss_recorder import LossOutput
 from scvi import REGISTRY_KEYS
 from scvi.data import AnnDataManager
 from scvi.data.fields import (
@@ -37,7 +37,7 @@ from torch import nn
 from torch.distributions import Bernoulli, Normal
 from torch.distributions import kl_divergence as kl
 
-from .training_mixin import BaseContrastiveModelClass
+from .base_contrastive_model import BaseContrastiveModelClass
 from .utils import gumbel_sigmoid, mmd
 
 Number = Union[int, float]

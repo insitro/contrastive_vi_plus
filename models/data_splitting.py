@@ -10,7 +10,7 @@ from scvi import settings
 from scvi.dataloaders._data_splitting import validate_data_split
 from scvi.model._utils import parse_use_gpu_arg
 
-from contrastive_dataloader import ContrastiveDataLoader
+from .contrastive_dataloader import ContrastiveDataLoader
 
 
 class ContrastiveDataSplitter(pl.LightningDataModule):
