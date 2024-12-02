@@ -23,3 +23,6 @@ pip install git+
 
 
 ### Colab Notebook Examples
+
+* [Validating ContrastiveVI+ on ECCITE-seq data from Papalexi et al. 2021](https://colab.research.google.com/drive/1H4H76Bb-6w5bcNfeFhGM-Rijxi_qqB7k?usp=sharing)
+* [Applying ContrastiveVI+ to a large-scale CRISPRa experiment from Norman et al., 2019](https://colab.research.google.com/drive/1Rlnftxcm0bgBr_8lx9ts1XnvdI5tSLHs?usp=sharing)
