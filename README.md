@@ -13,7 +13,7 @@ ConstrastiveVI+ is a generative modeling framework for analyzing genetic screen 
 The latest version of ContrastiveVI+ can be installed from Github using pip:
 
 ```bash
-pip install git+
+pip install git+https://github.com/insitro/contrastive_vi_plus/
 ```
 
 ### What you can do with ContrastiveVI+
