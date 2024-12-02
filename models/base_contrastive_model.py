@@ -3,7 +3,7 @@ from typing import List, Optional, Union
 from scvi.model.base import BaseModelClass
 from scvi.train import TrainingPlan, TrainRunner
 
-from data_splitting import ContrastiveDataSplitter
+from .data_splitting import ContrastiveDataSplitter
 
 
 class BaseContrastiveModelClass(BaseModelClass):
