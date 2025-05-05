@@ -1195,13 +1195,14 @@ class ContrastiveVIPlusModel(BaseContrastiveModelClass):
         for tensors in data_loader:
             x = tensors[REGISTRY_KEYS.X_KEY]
             batch_index = tensors[REGISTRY_KEYS.BATCH_KEY]
+            labels = tensors["labels"]
             background_per_batch_exprs = []
             salient_per_batch_exprs = []
             for batch in transform_batch:
                 if batch is not None:
                     batch_index = torch.ones_like(batch_index) * batch
                 inference_outputs = self.module._generic_inference(
-                    x=x, batch_index=batch_index, n_samples=n_samples
+                    x=x, batch_index=batch_index, n_samples=n_samples, labels=labels
                 )
                 z = inference_outputs["z"]
                 s = inference_outputs["s"]
